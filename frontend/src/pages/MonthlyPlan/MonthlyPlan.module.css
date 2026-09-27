@@ -1,0 +1,156 @@
+.monthlyPlan {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.monthSelector {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+}
+
+.monthInput {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.copyButton {
+  margin-left: auto;
+}
+
+.summaryCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.summaryCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+}
+
+.summaryLabel {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.summaryValue {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.summaryValue.income {
+  color: var(--color-income);
+}
+
+.summaryValue.expense {
+  color: var(--color-expense);
+}
+
+.summaryValue.balance {
+  color: var(--color-primary);
+}
+
+.budgetsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.budgetCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-fast);
+}
+
+.budgetCard:hover {
+  border-color: var(--color-border-subtle);
+  background: var(--color-surface-2);
+}
+
+.budgetHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+}
+
+.budgetCategory {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.budgetProgress {
+  margin-bottom: var(--spacing-md);
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background: var(--color-surface-3);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: var(--spacing-xs);
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--color-primary);
+  transition: width var(--transition-normal);
+}
+
+.progressFill.warning {
+  background: var(--color-warning);
+}
+
+.progressFill.danger {
+  background: var(--color-expense);
+}
+
+.progressText {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.budgetDetails {
+  display: flex;
+  gap: var(--spacing-lg);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.empty {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.loading {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-text-secondary);
+}

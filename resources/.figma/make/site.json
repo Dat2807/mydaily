@@ -1,0 +1,10 @@
+{
+  "description": "Effortlessly track personal finances with a user-friendly dashboard that simplifies daily logging, budgeting, and saving goal management for individuals.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

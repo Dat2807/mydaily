@@ -1,0 +1,134 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.statCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+}
+
+.statLabel {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.statValue {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.statValue.income {
+  color: var(--color-income);
+}
+
+.statValue.expense {
+  color: var(--color-expense);
+}
+
+.statValue.saving {
+  color: var(--color-saving);
+}
+
+.recentTransactions {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.transactionList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.transactionItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  background: var(--color-surface-2);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.transactionItem:hover {
+  background: var(--color-surface-3);
+}
+
+.transactionInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.transactionEmoji {
+  font-size: 24px;
+}
+
+.transactionDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.transactionCategory {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.transactionDate {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.transactionAmount {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.transactionAmount.income {
+  color: var(--color-income);
+}
+
+.transactionAmount.expense {
+  color: var(--color-expense);
+}
+
+.empty {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-text-muted);
+}
+
+.loading {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-text-secondary);
+}

@@ -1,0 +1,115 @@
+.transactions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.filters {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  flex: 1;
+  min-width: 200px;
+}
+
+.filterLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.transactionList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.transactionItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.transactionItem:hover {
+  border-color: var(--color-border-subtle);
+  background: var(--color-surface-2);
+}
+
+.transactionInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.transactionEmoji {
+  font-size: 28px;
+}
+
+.transactionDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.transactionCategory {
+  font-weight: 500;
+  color: var(--color-text);
+  font-size: 16px;
+}
+
+.transactionNote {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.transactionDate {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.transactionAmount {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.transactionAmount.income {
+  color: var(--color-income);
+}
+
+.transactionAmount.expense {
+  color: var(--color-expense);
+}
+
+.empty {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.loading {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-text-secondary);
+}
+
+.addButton {
+  align-self: flex-start;
+}
